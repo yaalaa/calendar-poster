@@ -48,6 +48,7 @@ RIGHT            = PAGE_WIDTH - PAD_OUTER_HORZ
 RIGHT_WEEKDAY    = RIGHT; RIGHT -= WIDTH_WEEKDAY + PAD_ITEM_HORZ
 LEFT_ITEM        = LEFT
 
+print( 'Top part height: {}'.format( TOP ) )
 
 dwg = svgwrite.Drawing( 'out/out.svg', size = ( PAGE_WIDTH_PHYS, PAGE_HEIGHT_PHYS ) )
 dwg.viewbox( 0, 0, PAGE_WIDTH, PAGE_HEIGHT )
