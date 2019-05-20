@@ -14,7 +14,7 @@ PAGE_WIDTH       = 420
 PAGE_HEIGHT      = 590
 
 TITLE_FONT_SIZE  = 6
-DAY_FONT_SIZE    = 5
+DAY_FONT_SIZE    = 6
 
 FILL_USUAL       = 'black'
 FILL_HOLIDAY     = '#a00000'
