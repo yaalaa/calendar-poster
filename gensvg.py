@@ -7,11 +7,11 @@ import svgwrite
 import calc
 
 
-PAGE_WIDTH_PHYS  = '42cm'
-PAGE_HEIGHT_PHYS = '59cm'
+PAGE_WIDTH_PHYS  = '420mm'
+PAGE_HEIGHT_PHYS = '594mm'
 
 PAGE_WIDTH       = 420
-PAGE_HEIGHT      = 590
+PAGE_HEIGHT      = 594
 
 TITLE_FONT_SIZE  = 6
 DAY_FONT_SIZE    = 6
