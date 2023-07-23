@@ -2,7 +2,7 @@ from   datetime import datetime, timedelta
 
 
 # calculate constants
-YEAR           = 2023
+YEAR           = 2024
 MONTH_COLS     = 6
 ITEM_COLS      = MONTH_COLS + 1
 WEEK_ROWS      = 7
@@ -83,7 +83,24 @@ for idx in range( 12 ):
 
 def is_holiday( month, day ):
 
-    if YEAR == 2023:
+    if YEAR == 2024:
+        if month == 1: # Jan
+            return day <= 8
+        if month == 2: # Feb
+            return day == 23
+        if month == 3: # Mar
+            return day == 8
+        if month == 4: # April
+            return day >= 29
+        if month == 5: # May
+            return day in { 1, 9, 10, }
+        if month == 6: # Jun
+            return day == 12
+        if month == 11: # Nov
+            return day == 4
+        if month == 12: # Dec
+            return day >= 30
+    elif YEAR == 2023:
         if month == 1: # Jan
             return day <= 8
         if month == 2: # Feb
