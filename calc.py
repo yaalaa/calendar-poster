@@ -42,6 +42,21 @@ MONTH_TITLES   = [
     'Декабрь',
 ]
 
+MONTH_SUBTITLES   = [
+    'Сечень',
+    'Лютый',
+    'Сухой',
+    'Брезень',
+    'Травень',
+    'Червец',
+    'Липец',
+    'Серпень',
+    'Вресень',
+    'Листопад',
+    'Листопад',
+    'Студень',
+]
+
 WEEKDAY_TITLES = [
     'пн',
     'вт',
@@ -60,8 +75,10 @@ for idx in range( 7 ):
 
 # fill the month titles
 for idx in range( 6 ):
-    data[ ROW_TITLE             ][ COL_MONTH + idx * ITEM_COLS ] = MONTH_TITLES[ idx     ]
-    data[ ROW_TITLE + LINE_ROWS ][ COL_MONTH + idx * ITEM_COLS ] = MONTH_TITLES[ idx + 6 ]
+    data[ ROW_TITLE                 ][ COL_MONTH + idx * ITEM_COLS ] = MONTH_TITLES   [ idx     ]
+    data[ ROW_TITLE + LINE_ROWS     ][ COL_MONTH + idx * ITEM_COLS ] = MONTH_TITLES   [ idx + 6 ]
+    data[ ROW_TITLE             + 1 ][ COL_MONTH + idx * ITEM_COLS ] = MONTH_SUBTITLES[ idx     ]
+    data[ ROW_TITLE + LINE_ROWS + 1 ][ COL_MONTH + idx * ITEM_COLS ] = MONTH_SUBTITLES[ idx + 6 ]
 
 # fill days
 for idx in range( 12 ):

@@ -68,10 +68,30 @@ for idx in range( 7 ):
 # draw months
 for idx in range( 12 ):
 
-    top  = TOP_TITLE +               ( 0   if idx < 6 else HEIGHT_LINE2 )
+    top  = TOP_TITLE +               ( 0   if idx < 6 else HEIGHT_LINE2 ) - TITLE_FONT_SIZE / 2
     left = LEFT_ITEM + WIDTH_ITEM2 * ( idx if idx < 6 else idx - 6      )
 
-    dwg.add( dwg.text( calc.MONTH_TITLES[ idx ], insert = ( left + WIDTH_ITEM / 2, top ), font_size = TITLE_FONT_SIZE, fill = 'black', text_anchor = 'middle', font_weight = 'bold' ) )
+    dwg.add(
+        dwg.text(
+            calc.MONTH_TITLES[ idx ],
+            insert      = ( left + WIDTH_ITEM / 2, top ),
+            font_size   = TITLE_FONT_SIZE,
+            fill        = 'black',
+            text_anchor = 'middle',
+            font_weight = 'bold'
+        )
+    )
+
+    dwg.add(
+        dwg.text(
+            calc.MONTH_SUBTITLES[ idx ],
+            insert      = ( left + WIDTH_ITEM / 2, top + TITLE_FONT_SIZE * 3 / 2 ),
+            font_size   = TITLE_FONT_SIZE,
+            fill        = 'green', #'blue',
+            text_anchor = 'middle',
+            font_weight = 'bold'
+        )
+    )
 
 # draw days
 for idx in range( 12 ):
