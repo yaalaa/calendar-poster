@@ -1,5 +1,11 @@
 from   datetime import datetime, timedelta
 
+# output image
+# a2
+# 4961 x 7016
+# top
+# 4961 x 4300
+#
 
 # calculate constants
 YEAR           = 2026
